@@ -1,0 +1,106 @@
+---
+#layout:  compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.locale }}">
+<head>
+		<meta charset="{{ site.charset }}">
+		<meta name="MobileOptimized" content="320">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- titel, descriptions & keywords -->
+		<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+		<meta name="author" content="{{ site.name }}">
+		<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.title }}{% endif %}">
+		<meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}{{ site.sitetags }}">
+
+<!-- css & media imports -->
+		<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+		<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+		<link href="{{ site.url }}/assets/css/design.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- menu -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+<!-- menu header-->
+		<div class="container">
+			<header id="header-full-top" class="hidden-xs header-full">
+				<div class="header-full-title">
+					<h1><a href="{{ site.url }}">Notiz <span>Blog</span></a></h1>
+					<p>Hat du Kopp wie Sieb, mut du aufschreiben!</p>
+				</div>
+			</header>
+		</div>
+
+<!-- menu navbar-->
+		<div class="container-fluid navbar-default">
+
+<!-- menu button -->
+			<div class="navbar-header">
+				<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="{{ site.url }}">Notiz <span>Blog</span></a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+<!-- main menu left-->
+			<div class="container">
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown{% if page.url contains '/audio/' %} act"{% endif %}">
+							<a href="{{ site.url }}/audio/" class="dropdown-toggle" data-toggle="dropdown">Audio <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li{% if page.url contains '/audio/grundlagen.html' %} class="act"{% endif %}><a href="{{ site.url }}/audio/">Grundlagen</a></li>
+								<li{% if page.url contains '/audio/hifi_computer.html' %} class="act"{% endif %}><a href="{{ site.url }}/audio/index.html">HiFi Computer</a></li>
+								<li{% if page.url contains '/audio/musikverwaltung.html' %} class="act"{% endif %}><a href="{{ site.url }}/audio/">Musikverwaltung</a></li>
+							</ul>
+						</li>
+						<li class="dropdown{% if page.url contains '/oolong/' %} act"{% endif %}">
+							<a href="{{ site.url }}/oolong/" class="dropdown-toggle" data-toggle="dropdown">Oolong <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li{% if page.url contains '/oolong/index.html' %} class="act"{% endif %}><a href="{{ site.url }}/oolong/">Leidenschaft</a></li>
+								<li{% if page.url contains '/oolong/sortenverzeichnis.html' %} class="act"{% endif %}><a href="{{ site.url }}/oolong/sortenverzeichnis.html">Sortenverzeichnis</a></li>
+							</ul>
+						</li>
+						<li{% if page.url contains '/notizblog/' %} class="act"{% endif %}><a href="{{ site.url }}/notizblog/">Notiz Blog</a></li>
+					</ul>
+
+<!-- main menu right -->
+					<ul class="nav navbar-nav navbar-right">
+						<li{% if page.url contains 'kolophon.html' %} class="act"{% endif %}><a href="{{ site.url }}/kolophon.html">Kolophon</a></li>
+						<li{% if page.url contains 'impressum.html' %} class="act"{% endif %}><a href="{{ site.url }}/impressum.html">Impressum</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+
+<!-- spacer -->
+	<div class="spacer hidden-xs"></div>
+	<div class="spacer-xs hidden-lg hidden-md hidden-sm"></div>
+
+<!-- main content-->
+    <div class="container">
+
+{{ content }}
+
+	</div>
+<!-- footer content-->
+    <div class="footer">
+		<div class="container text-muted">
+			<div class="pull-left"><p><a class="" title="Zum Seitenanfang" href="#top"><span class="glyphicon glyphicon-chevron-up icon"></span></a></p></div>
+			<div class="pull-left"><p><a href="{{ site.url }}/kolophon.html">Kontakt</a> | <a href="{{ site.url }}/impressum.html">Impressum</a><br/>© 2012 - 2014 by Michael Vogel</p></div>
+		</div>
+	</div>
+
+<!-- js import async-->
+    <script src="{{ site.url }}/assets/js/scripts.min.js" async></script>
+</body>
+</html>
