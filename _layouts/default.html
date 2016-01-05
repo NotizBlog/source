@@ -54,12 +54,13 @@
 			<div class="container">
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="dropdown{% if page.url contains '/audio/' %} act"{% endif %}">
-							<a href="{{ site.url }}/audio/" class="dropdown-toggle" data-toggle="dropdown">Audio <span class="caret"></span></a>
+						<li class="dropdown{% if page.url contains 'audiophil' %} act"{% endif %}">
+							<a href="{{ site.url }}/audiophil/" class="dropdown-toggle" data-toggle="dropdown">Audiophil <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li{% if page.url contains '/audio/grundlagen.html' %} class="act"{% endif %}><a href="{{ site.url }}/audio/">Grundlagen</a></li>
-								<li{% if page.url contains '/audio/hifi_computer.html' %} class="act"{% endif %}><a href="{{ site.url }}/audio/index.html">HiFi Computer</a></li>
-								<li{% if page.url contains '/audio/musikverwaltung.html' %} class="act"{% endif %}><a href="{{ site.url }}/audio/">Musikverwaltung</a></li>
+								<li{% if page.url == '{{ site.url }}/audiophil/' %} class="act"{% endif %}><a href="{{ site.url }}/audiophil/">Übersicht</a></li>
+								<li{% if page.url contains '/audiophil/grundlagen/' %} class="act"{% endif %}><a href="{{ site.url }}/audiophil/grundlagen/">Grundlagen</a></li>
+								<li{% if page.url contains '/audiophil/hifi_computer' %} class="act"{% endif %}><a href="{{ site.url }}/audiophil/hifi_computer">HiFi Computer</a></li>
+								<li{% if page.url contains '/audiophil/musikbibliothek' %} class="act"{% endif %}><a href="{{ site.url }}/audiophil/musikbibliothek/">Musikverwaltung</a></li>
 							</ul>
 						</li>
 						<li class="dropdown{% if page.url contains '/oolong/' %} act"{% endif %}">

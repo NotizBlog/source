@@ -19,6 +19,5 @@ markdown: "rdiscount"
 highlighter: "rouge"
 include: [".htaccess"]
 gems: ["jekyll-paginate"]
-source: "/Users/michael/Documents/Sites/source.notizblog.github.io/"
 destination: "/Users/michael/Documents/Sites/notizblog.github.io/"
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
