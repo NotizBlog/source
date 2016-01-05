@@ -15,9 +15,9 @@ Ich weiss, dass ich nie die Chance haben werde, im Stern zu erscheinen. Aber bin
 ### Zusammenfassung
 Er war mit Franklin, Rockwell und dem halbtaxgrauen Panther Weidemann in Memphis (Heartbreak Hotel) zugange. Sie warteten auf die fette Gill, um bei der Bank of Helvetica die Kapitälchen in Kapital umzuwandeln. Oxmox liess nicht locker. Ich fleh euch an, rettet meine Copy, gebt meinem Body nochn Durchschuss!
 
-<a rel="gallery-1" href="pictures/slide1.jpg" class="swipebox btn btn-primary" title="Sonnenuntergang"><i class="glyphicon glyphicon-picture"></i> Bildergalerie</a>
-<a rel="gallery-1" href="pictures/slide2.jpg" class="swipebox" title="Junge"></a>
-<a rel="gallery-1" href="pictures/slide3.jpg" class="swipebox" title="Dolomiten"></a>
+<a rel="gallery-1" href="../pictures/slide1.jpg" class="swipebox btn btn-primary" title="Sonnenuntergang"><i class="glyphicon glyphicon-picture"></i> Bildergalerie</a>
+<a rel="gallery-1" href="../pictures/slide2.jpg" class="swipebox" title="Junge"></a>
+<a rel="gallery-1" href="../pictures/slide3.jpg" class="swipebox" title="Dolomiten"></a>
 
 ### Zusammenfassung
 Er war mit Franklin, Rockwell und dem halbtaxgrauen Panther Weidemann in Memphis (Heartbreak Hotel) zugange. Sie warteten auf die fette Gill, um bei der Bank of Helvetica die Kapitälchen in Kapital umzuwandeln. Oxmox liess nicht locker. Ich fleh euch an, rettet meine Copy, gebt meinem Body nochn Durchschuss! Er war mit Franklin, Rockwell und dem halbtaxgrauen Panther Weidemann in Memphis (Heartbreak Hotel) zugange. Sie warteten auf die fette Gill, um bei der Bank of Helvetica die Kapitälchen in Kapital umzuwandeln. Oxmox liess nicht locker. Ich fleh euch an, rettet meine Copy, gebt meinem Body nochn Durchschuss!
