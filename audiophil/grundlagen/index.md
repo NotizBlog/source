@@ -1,9 +1,21 @@
 ---
 layout:  default
 title:   "Grundlagen"
+category: AudiophileGrundlagen
+tags:    "Audiophile,Grundlagen,"
 excerpt: "Rund um die PC HiFi Welt"
-#tags:    example,example,
 ---
-
 # Grundlagen.
-Von Geburt an. Es hat lange gedauert, bis ich begriffen habe, was es bedeutet, ein blinder Text zu sein: Man macht keinen Sinn. Man wirkt hier und da aus dem Zusammenhang gerissen. Oft wird man gar nicht erst gelesen. Aber bin ich deshalb ein schlechter Text?
+  <ul class="post-list">
+    {% for post in site.posts %}
+    {% if post.categories contains 'AudiophileGrundlagen' %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
